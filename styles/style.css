@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+*{
+    font-family: poppins;
+    
+}
+
+body{
+    /* background: linear-gradient(to right, #c7d2fe, #fef9c3); 
+    color: white;  */
+}
+
+.user{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: white;
+} 
+.tstack img{
+    width: 8%;
+}
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: #333;
+    padding-bottom: 5px;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background-color: #F7BE38; /* Matches button color */
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}

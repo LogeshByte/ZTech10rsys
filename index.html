@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="./assets/images/logo.png">
+   
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ZTech10r</title>
+</head>
+<body class="bg-[size:40px_40px] bg-[image:linear-gradient(to_right,rgba(128,128,128,0.2)_1px,transparent_1px),linear-gradient(to_bottom,rgba(128,128,128,0.2)_1px,transparent_1px)] h-screen w-full inset-0 absolute z-[-1] opacity-95">
+  <header class="flex justify-between items-center fixed top-4 left-6 right-6 !bg-white/80 backdrop-blur-md rounded-full shadow-lg px-6 py-2 z-50">
+    <!-- Logo -->
+    <img src="./assets/images/logo-nobg.png" alt="Logo" class="w-30 h-auto cursor-pointer p-1">
+
+    <!-- Navigation Menu -->
+    <nav class="text-black">
+        <ul class="list-none flex space-x-6">
+            <li class="relative p-2.5">
+                <a href="/" class="nav-link">Home</a>
+            </li>
+            <li class="relative p-2.5">
+                <a href="/" class="nav-link">Service</a>
+            </li> 
+            <li class="relative p-2.5">
+                <a href="/" class="nav-link">Work</a>
+            </li>
+            <li class="relative p-2.5">
+                <a href="/" class="nav-link">About</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="flex items-center space-x-4">
+    <label class="relative flex items-center cursor-pointer">
+      <input type="checkbox" id="darkModeToggle" class="sr-only peer">
+      <div class="w-14 h-7 bg-gray-300 dark:bg-gray-700 rounded-full peer-checked:bg-yellow-500 relative transition-all duration-300">
+          <div class="absolute left-1 top-1 w-5 h-5 bg-white dark:bg-black rounded-full shadow-md transition-all duration-300 peer-checked:translate-x-7 flex items-center justify-center">
+              <i id="darkModeIcon" class="fa-solid fa-moon text-gray-700 dark:text-yellow-300 transition-all duration-300"></i>
+          </div>
+      </div>
+  </label>
+
+    <!-- Contact Button -->
+    <a href="/">
+        <button class="text-gray-900 bg-[#F7BE38] hover:bg-[#F7BE38]/90 focus:ring-4 focus:outline-none focus:ring-[#F7BE38]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#F7BE38]/50 me-2 mb-2 font-semibold">
+            Contact
+        </button>
+    </a>
+    </div>
+</header>
+
+  <!-- Hero Section -->
+
+  <section class="relative h-screen flex items-center justify-center px-10 bg-[size:40px_40px] bg-[image:linear-gradient(to_right,rgba(128,128,128,0.2)_1px,transparent_1px),linear-gradient(to_bottom,rgba(128,128,128,0.2)_1px,transparent_1px)] h-screen w-full inset-0 absolute z-[-1] ">
+
+    <div class="absolute bg-white/70 backdrop-blur-xl rounded-3xl shadow-lg mx-6 my-10 p-10 flex flex-col md:flex-row items-center justify-between pt-20">
+        
+        <!-- Left Content (Text) -->
+        <div class="max-w-xl text-center md:text-left">
+            <h1 class="text-5xl font-extrabold text-blue-700 animate-fadeIn">
+                Elevate Your Business with <span class="text-[#F7BE38]">Innovative Tech</span>
+            </h1>
+            <p class="text-lg text-gray-700 mt-4 animate-fadeIn delay-200">
+                
+              We’re constantly disrupting and innovating to bring out the best use of technology for our clientele.
+            </p>
+            
+            <!-- CTA Buttons -->
+            <div class="mt-6 flex justify-center md:justify-start space-x-4 animate-fadeIn delay-300 gap-9">
+                <a href="/contact">
+                    <button class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-800 transition-all">
+                        Contact Us
+                    </button>
+                </a>
+                <ul class="flex space-x-7 text-white font-bold">
+                  <li class="bg-amber-400 p-1 rounded-full w-10 h-10 flex items-center justify-center bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                  <li class="bg-amber-400 p-1 rounded-full w-10 h-10 flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-800 "><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                  <li class="bg-amber-400 p-1 rounded-full w-10 h-10 flex items-center justify-center bg-black"><a href=""><i class="fa-brands fa-x"></i></a></li>
+                </ul>
+                </a>
+            </div>
+        </div>
+
+        <!-- Right Content (Image) -->
+        <div class="mt-8 md:mt-0">
+            <img src="/assets/images/Product presentation-pana.svg" 
+                alt="Tech Illustration" 
+                class="w-[1000px] h-auto rounded-xl animate-fadeIn delay-400">
+
+                    <!-- Drone Animation 1 -->
+      <video autoplay loop muted playsinline class="absolute top-20 right-50 w-20 ">
+        <source src="/assets/Animation/drone.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+        </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack-->
+
+  <section class="text-center h-10 p-3 py-5 mb-70">
+    <h1 class="my-10 font-extrabold text-3xl">Tech Stack</h1>
+  
+    <div class="flex space-x-16 justify-center tstack p-5 ">
+     <img src="/assets/techStack/react.svg" alt="React">
+      <img src="/assets/techStack/nextdotjs.svg" alt="Next.js">
+      <img src="/assets/techStack/tailwindcss.svg" alt="Tailwind CSS">
+      <img src="/assets/techStack/nodedotjs.svg" alt="Node.js">
+      <img src="/assets/techStack/firebase.svg" alt="Firebase">
+      <img src="/assets/techStack/javascript.svg" alt="JavaScript">
+    </div>
+  </section>
+  
+  <!-- Services Section -->
+
+  <section class="py-10">
+    <h1 class="text-center text-3xl font-bold mb-10">Our Services</h1>
+    <div class="flex flex-wrap justify-center gap-8 px-5">
+        <!-- Development Card -->
+        <div class="card  shadow-lg rounded-lg p-6 w-80 text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+            <img src="/assets/Animation/Development focus.gif" alt="Development" class="w-60 h-60 mx-auto mb-4 rounded-lg">
+            <h2 class="text-xl font-semibold mb-3">Development</h2>
+            <ul class="text-gray-700 text-left space-y-2">
+                <li><i class="fa-solid fa-circle-check text-amber-400"></i> Web Development – Responsive & dynamic websites.</li>
+                <li><i class="fa-solid fa-circle-check text-amber-400"></i> Mobile Development – Seamless Android & iOS apps.</li>
+                <li><i class="fa-solid fa-circle-check text-amber-400"></i> Desktop Development – Efficient software solutions.</li>
+            </ul>
+        </div>
+
+        <!-- Design Card -->
+        <div class="card  shadow-lg rounded-lg p-6 w-80 text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+            <img src="/assets/Animation/Design team.gif" alt="Design" class="w-60 h-60 mx-auto mb-4 rounded-lg">
+            <h2 class="text-xl font-semibold mb-3">Design</h2>
+            <ul class="text-gray-700 text-left space-y-2">
+                <li><i class="fa-solid fa-circle-check text-amber-400"></i> Web Design – Aesthetic & responsive interfaces.</li>
+                <li><i class="fa-solid fa-circle-check text-amber-400"></i> Mobile Design – Engaging & intuitive UI/UX.</li>
+                <li><i class="fa-solid fa-circle-check text-amber-400"></i> Desktop Design – Sleek & functional layouts.</li>
+            </ul>
+        </div>
+
+        <!-- Consulting Card -->
+        <div class="card  shadow-lg rounded-lg p-6 w-80 text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+            <img src="/assets/Animation/Consult.gif" alt="Consulting" class="w-60 h-60 mx-auto mb-4 rounded-lg">
+            <h2 class="text-xl font-semibold mb-3">Consulting</h2>
+            <ul class="text-gray-700 text-left space-y-2">
+                <li><i class="fa-solid fa-circle-check text-amber-400"></i> Web Consulting – Optimize website performance.</li>
+                <li><i class="fa-solid fa-circle-check text-amber-400"></i> Mobile Consulting – Expert app strategy & scaling.</li>
+                <li><i class="fa-solid fa-circle-check text-amber-400"></i> Desktop Consulting – Scalable software guidance.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+
+<section class="py-12 ">
+  <h2 class="text-center text-3xl font-bold mb-6">Why Choose Us?</h2>
+  <p class="text-center text-gray-600 max-w-2xl mx-auto mb-10">
+      We provide top-notch digital solutions with a focus on quality, innovation, and client satisfaction.
+  </p>
+
+  <div class="flex flex-wrap justify-center gap-8 px-5">
+      <!-- Experience Card -->
+      <div class="card bg-white shadow-md rounded-lg p-6 w-72 text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+        <i class="fa-solid fa-award text-5xl text-blue-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Years of Experience</h3>
+          <p class="text-gray-600">With over 5 years in the industry, we deliver high-quality, reliable solutions.</p>
+      </div>
+
+      <!-- Custom Solutions Card -->
+      <div class="card bg-white shadow-md rounded-lg p-6 w-72 text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+        <i class="fa-solid fa-gears text-5xl text-green-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Tailored Solutions</h3>
+          <p class="text-gray-600">Every project is unique. We create customized strategies to fit your needs.</p>
+      </div>
+
+      <!-- Client Satisfaction Card -->
+      <div class="card bg-white shadow-md rounded-lg p-6 w-72 text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+        <i class="fa-solid fa-thumbs-up text-5xl text-yellow-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Client Satisfaction</h3>
+          <p class="text-gray-600">We value our clients and strive for 100% satisfaction with every project.</p>
+      </div>
+
+      <!-- Support Card -->
+      <div class="card bg-white shadow-md rounded-lg p-6 w-72 text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+        <i class="fa-solid fa-headset text-5xl text-red-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">24/7 Support</h3>
+          <p class="text-gray-600">Our team is always available to assist you whenever you need us.</p>
+      </div>
+  </div>
+</section>
+
+<!-- Testimonial Section -->
+<section class="py-16 bg-gradient-to-r from-yellow-50 to-yellow-100 relative overflow-hidden">
+  <h2 class="text-center text-4xl font-bold mb-6 text-yellow-700">What Our Clients Say</h2>
+  <p class="text-center text-gray-600 max-w-2xl mx-auto mb-10">
+    Discover how we’ve helped our clients achieve their goals with our innovative solutions.
+  </p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
+    <!-- Testimonial 1 -->
+    <div class="bg-white shadow-lg rounded-lg p-6 text-center transform hover:scale-105 transition duration-300">
+      <img src="/assets/images/client1.jpg" alt="Client 1" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full mx-auto mb-4 border-4 border-yellow-500">
+      <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-yellow-700">John Doe</h3>
+      <p class="text-gray-500 text-sm mb-4">CEO, TechCorp</p>
+      <p class="text-gray-600 italic">
+        "ZTech transformed our business with their innovative solutions. Their team is professional, efficient, and highly skilled."
+      </p>
+    </div>
+
+    <!-- Testimonial 2 -->
+    <div class="bg-white shadow-lg rounded-lg p-6 text-center transform hover:scale-105 transition duration-300">
+      <img src="/assets/images/client2.jpg" alt="Client 2" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full mx-auto mb-4 border-4 border-yellow-500">
+      <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-yellow-700">Jane Smith</h3>
+      <p class="text-gray-500 text-sm mb-4">Founder, DesignPro</p>
+      <p class="text-gray-600 italic">
+        "The team at ZTech exceeded our expectations. Their attention to detail and creativity are unmatched."
+      </p>
+    </div>
+
+    <!-- Testimonial 3 -->
+    <div class="bg-white shadow-lg rounded-lg p-6 text-center transform hover:scale-105 transition duration-300">
+      <img src="/assets/images/client3.jpg" alt="Client 3" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full mx-auto mb-4 border-4 border-yellow-500">
+      <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-yellow-700">Emily Johnson</h3>
+      <p class="text-gray-500 text-sm mb-4">Manager, InnovateX</p>
+      <p class="text-gray-600 italic">
+        "Working with ZTech was a game-changer for our company. Their expertise and dedication are truly commendable."
+      </p>
+    </div>
+  </div>
+
+  <!-- Background Animation -->
+  <div class="absolute top-0 left-0 w-96 h-96 bg-yellow-200 rounded-full opacity-50 blur-3xl -z-10"></div>
+  <div class="absolute bottom-0 right-0 w-96 h-96 bg-yellow-300 rounded-full opacity-50 blur-3xl -z-10"></div>
+</section>
+
+  <script src="./scripts/script.js" ></script>    
+</body>
+</html>
